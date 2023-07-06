@@ -1,0 +1,42 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true" android:state_enabled="true">
+        <set>
+            <objectAnimator
+                android:propertyName="translationZ"
+                android:duration="200"
+                android:valueTo="8dp" />
+            <objectAnimator
+                android:propertyName="cardBackgroundColor"
+                android:duration="200"
+                android:valueTo="#E0E0E0" />
+            <objectAnimator
+                android:propertyName="scaleX"
+                android:duration="200"
+                android:valueTo="1.1" />
+            <objectAnimator
+                android:propertyName="scaleY"
+                android:duration="200"
+                android:valueTo="1.1" />
+        </set>
+    </item>
+    <item>
+        <set>
+            <objectAnimator
+                android:propertyName="translationZ"
+                android:duration="200"
+                android:valueTo="0dp" />
+            <objectAnimator
+                android:propertyName="cardBackgroundColor"
+                android:duration="200"
+                android:valueTo="#F8F7F7" />
+            <objectAnimator
+                android:propertyName="scaleX"
+                android:duration="200"
+                android:valueTo="1.0" />
+            <objectAnimator
+                android:propertyName="scaleY"
+                android:duration="200"
+                android:valueTo="1.0" />
+        </set>
+    </item>
+</selector>
